@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Papyrus;
+  src: url(../fonts/PAPYRUS.ttf);
+}
+
+* {
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+.main {
+  position: relative;
+  background-image: url(desktop.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fadeIn 1s ease-in both;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.four {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.five {
+  position: absolute;
+  bottom: 1%;
+  right: 5%;
+}
+
+p {
+  font-family: Papyrus;
+  font-size: 30em;
+  color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    background-image: url(./mobile.png);
+  }
+
+  p {
+    font-size: 8em;
+  }
+
+  .four {
+    position: absolute;
+    top: 45%;
+    left: 80%;
+  }
+
+  .five {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+  }
+}
